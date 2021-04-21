@@ -1,0 +1,12 @@
+.pokelist {
+    padding-left: 0;
+
+    &__item {
+        margin: 0.25em 0;
+    }
+    
+    &__link {
+        text-decoration: none;
+        color: darkblue;
+    }
+}

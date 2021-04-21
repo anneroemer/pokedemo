@@ -1,0 +1,17 @@
+.searchform {
+    display: flex; /* får inline elementer til at stå helt tæt sammen i form */
+
+    &__input {
+        padding: 0.5em;
+        border: 2px solid darkblue;
+        border-radius: 0.6em 0 0 0.6em;
+    }
+
+    &__submit {
+        background-color: darkblue;
+        border-radius: 0 0.6em 0.6em 0;
+        color: yellow;
+        border: none;
+        padding: 0.5em 1.2em;
+    }
+}

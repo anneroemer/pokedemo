@@ -15,13 +15,17 @@
         <header class="header">
             <h1>My Pokedex</h1>
         </header>
-        <form action="/result" name="findPokemon" class="searchform">
-            <input type="search" name="search" id="search" class="searchform__input">
-            <button type="submit" class="searchform__submit">Search!</button>
-        </form>
-        <ul class="pokelist"></ul>
 
-        <footer class="pokefooter"></footer>
+        <div class="result">
+            <p class="result__message"></p>
+
+            <ul class="result__list">
+            </ul>
+        </div>
+
+        <footer class="pokefooter">
+            <button class="goBack">Go back to the search</button>
+        </footer>
     </div><!--end of wrapper-->
     <script src="/js/app.js"></script>
 </body>
