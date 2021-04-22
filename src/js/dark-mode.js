@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
         modeBtns.addEventListener("click", function(event){
             if(event.target !== event.currentTarget){ //hvis den div vi lytter på ikke er den vi klikker på (event.target er det element der registrerer klikket)
                 setActiveColorMode(event.target.dataset.mode) //dataset referer til data attributten 
-                console.log(event.target.dataset.mode); 
+                //console.log(event.target.dataset.mode); 
             }
         })
     }
