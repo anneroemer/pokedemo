@@ -1,0 +1,59 @@
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: hsla(0%, 0%, 0%, 0.3%);
+    display: grid;
+    grid-template-rows: 5.65em auto;
+
+    &__buttons {
+        place-self: center;
+        position: relative;
+        z-index: 200;
+    }
+
+    &__tooltip {
+        position: relative;
+        z-index: 100;
+        width: 260px;
+    }
+
+    &__tooltip svg {
+        
+        width: 260px;
+        height: auto;
+    }
+
+    &__tooltipText {
+        position: absolute;
+        left: 86px;
+        top: 76px;
+        width: 160px;
+        opacity: 0;
+        animation: fadeIn 0.3s ease-in 0.6s forwards;
+    }
+}
+
+.myCircle {
+    r: 0px;
+    animation: circleAnimation 0.2s ease-in 0.3s forwards;
+}
+.tooltip {
+    fill-opacity: 0;
+    animation: fadeIn 0.3s ease-in 0.6s forwards;
+}
+
+@keyframes circleAnimation {
+    to {
+        r: 40px;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        fill-opacity: 1;
+        opacity: 1;
+    }
+}
