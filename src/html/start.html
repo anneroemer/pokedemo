@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="alternate stylesheet" href="/css/theme/light.css" title="light" disabled>
+    <link rel="alternate stylesheet" href="/css/theme/dark.css" title="dark" disabled>
+    <link rel="alternate stylesheet" href="/css/theme/highcontrast.css" title="highcontrast" disabled>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <h1>My Pokedex</h1>
+        </header>
+        <form action="/result" name="findPokemon" class="searchform">
+            <input type="search" name="search" id="search" class="searchform__input">
+            <button type="submit" class="searchform__submit">Search!</button>
+        </form>
+        <ul class="pokelist"></ul>
+
+        <footer class="pokefooter"></footer>
+    </div><!--end of wrapper-->
+    <div class="overlay">
+        <div class="overlay__buttons">
+            <button class="nextBtn">&rarr;</button>
+            <button class="skipBtn">Skip</button>
+        </div>
+        <div class="overlay__content"></div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.splashpage-background{
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, rgb(188, 188, 192), white 50%);
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3em;
+
+
+    &__h2 {
+        place-self: center;
+        font-size: 1.3em;
+        color: rgba(9, 9, 83, 0.653);
+        padding-bottom: 0.4em;
+    }
+
+    &__h1 {
+        place-self: center;
+        padding-bottom: 1em;
+        font-family: "Pokemon Solid";
+        color: rgb(9, 9, 136);
+        font-size: 4em;
+    }
+
+    &__svg {
+        animation-duration: 3s;
+    }
+
+    &__link {
+        place-self: center;
+        text-decoration: none;
+        color: rgb(110, 109, 109);
+        animation-delay: 1.9s;
+        padding: 4.5em 0 1.5em;
+    }
+
+}
+
+@font-face {
+    font-family: pokefont;
+    src: url("./pokemon_woff/Pokemon\ Solid.woff");
+}
+
+
